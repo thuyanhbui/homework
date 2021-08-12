@@ -78,3 +78,43 @@ body {
 .img-small {
   text-align: left;
 }
+
+.item::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+.itemrow::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+h2 {
+  color: blue;
+  text-transform: uppercase;
+}
+.indent {
+  text-indent: 30px;
+}
+.title {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 40px;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  background: url(../images/laco.png) no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 30px;
+  left: 0;
+  top: 0;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  background: url(../images/huyhieudang.jpg) no-repeat;
+  background-size: contain;
+  width: 45px;
+  height: 40px;
+}
